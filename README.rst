@@ -127,3 +127,10 @@ This will generate a new migration script. Then run:
 To apply the migration.
 
 For a full migration command reference, run ``python manage.py db --help``.
+
+Common problems
+----------------
+
+### Error: pg_config executable not found
+
+This error occurs when we are installing the project requirements with pip. To solve it, we need to install *postgresql-devel* (*libpq-dev* in Debian/Ubuntu).
